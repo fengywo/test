@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="login" namespace="/" extends="struts-default">
+   		<action name="login" class="com.action.LoginAction" method="login">
+   			<result name="success">/main.jsp</result>
+   			<result name="loginErr">/login.jsp</result>
+   		</action>
+   </package>
+   
+   <package name="tea" namespace="/" extends="struts-default">
+   		<action name="tea_*" class="com.action.TeacherAction" method="{1}">
+   			<result name="teaquery">/teaquery.jsp</result>
+   		</action>
+   </package>
+   
+    <package name="stu" namespace="/" extends="struts-default">
+   		<action name="stu_*" class="com.action.StudentAction" method="{1}">
+   			<result name="stuquery">/stuquery.jsp</result>
+   		</action>
+   </package>
+   
+   
+   
+</struts>
