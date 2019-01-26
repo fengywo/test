@@ -22,6 +22,7 @@ public class LoginAction extends ActionSupport{
 	
 	
 	public String login(){
+		system.out.print();
 		if("1".equals(change)){
 			StudentDao stuDao=new StudentDaoImpl();
 			Student stu=stuDao.login(name, password);
