@@ -44,6 +44,7 @@ public class LoginAction extends ActionSupport{
 				return "loginErr";
 			}
 		}
+		systen.out.print("123123");
 		return "loginErr";
 	}
 	
