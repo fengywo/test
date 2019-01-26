@@ -33,6 +33,9 @@ public class LoginAction extends ActionSupport{
 				return "loginErr";
 			}
 		}
+		
+		
+		
 		if("2".equals(change)){
 			TeacherDao teaDao=new TeacherDaoImpl();
 			Teacher tea=teaDao.login(name, password);
